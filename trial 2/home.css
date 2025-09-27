@@ -1,0 +1,333 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 32, 63, 0.7); /* Deep navy with transparency */
+  border-radius: 0 0 25px 25px;
+}
+
+.main-header .header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  border-radius: 12px;
+}
+
+.main-header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e0f2f1;
+}
+
+.main-header h1 span {
+  color: #4dd0e1; /* Teal accent */
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(135deg, #3d6293, #0096c7);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #caf0f8;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Why Choose Section */
+.why-choose {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 32, 63, 0.6);
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.features-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature i {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4dd0e1;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  color: #e0f7fa;
+}
+
+/* How It Works */
+/* How It Works Section */
+.how-it-works {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 32, 63, 0.85); /* slightly transparent navy */
+  color: #f0f0f0;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.how-it-works h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4dd0e1; /* teal accent */
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.step {
+  flex: 1;
+  min-width: 200px;
+  max-width: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background: rgba(77, 208, 225, 0.2);
+}
+
+/* Number Circle */
+.step::before {
+  content: attr(data-step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4dd0e1; /* teal circle */
+  color: #00203f; /* navy text */
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+/* Footer */
+/* Footer *//* Footer */
+/* Footer *//* Footer */
+footer {
+  background: rgba(0, 20, 40, 0.95);
+  color: #e0f7fa;
+  padding: 50px 20px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo img {
+  width: 70px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-logo h2 {
+  font-size: 1.3rem;
+  color: #4dd0e1;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-socials h4 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #e0f7fa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #4dd0e1;
+}
+
+.footer-contact a {
+  color: #4dd0e1;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #e0f7fa;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #4dd0e1;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+/* Hover for step cards */
+.step:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(77, 208, 225, 0.15);
+}
+/* Why Choose HINT Section */
+.why-choose {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.why-choose h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.why-card {
+  background: rgba(0, 32, 63, 0.6);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  color: #e0f7fa;
+}
+
+.why-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #4dd0e1;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.why-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: rgba(77, 208, 225, 0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+

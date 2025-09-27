@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HINT – Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="HINT.jpg" alt="HINT Logo" class="logo">
+    <h1>HINT <span>Digital Passport</span></h1>
+  </header>
+
+  <section class="form-container">
+    <h2>Create Your Passport</h2>
+    <form id="signupForm">
+      <label>Profile Photo</label>
+      <input type="file" id="photo" accept="image/*">
+
+      <label>Full Name</label>
+      <input type="text" id="fullName" required>
+
+      <label>Age</label>
+      <input type="number" id="age" required>
+
+      <label>Gender</label>
+      <select id="gender">
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+
+      <label>Location</label>
+      <input type="text" id="location" required>
+
+      <label>Email</label>
+      <input type="email" id="email">
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone">
+
+      <label>Education</label>
+      <select id="education">
+        <option>Primary</option>
+        <option>Secondary</option>
+        <option>Vocational</option>
+        <option>University</option>
+        <option>Other</option>
+      </select>
+
+      <label>Skills</label>
+      <input type="text" id="skills" placeholder="Tailoring, Coding, Graphic Design...">
+
+      <label>Work History</label>
+      <textarea id="workHistory" placeholder="List past gigs, jobs or client endorsements"></textarea>
+
+      <label>Portfolio Link</label>
+      <input type="url" id="portfolio" placeholder="Link to your work (Instagram, Behance, YouTube)">
+
+      <button type="submit">Create Passport</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 HINT – Empowering African Youth</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Email: <a href="mailto:info@hint.org">info@hint.org</a> | Phone: +254 712 345 678</p>
+    <a href="#">Contact Us</a>
+  </footer>
+
+  <script src="signup.js"></script>
+</body>
+</html>

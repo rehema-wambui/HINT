@@ -1,0 +1,294 @@
+/* === General Reset === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fffdf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(to right, #FFD700, #FFB347);
+  padding: 1rem 2rem;
+  color:  #E30613;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  height: 45px;
+  border-radius: 6px;
+}
+
+header span {
+  color: #333;
+  font-weight: normal;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #fffaf0, #fff);
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  color:  #E30613;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* === CTA Button (Styled) === */
+.cta-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #FFD700;
+  color:   #E30613;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cta-btn::after {
+  content: "→";
+  margin-left: 10px;
+  transition: margin-left 0.3s;
+}
+
+.cta-btn:hover {
+  background: #E30613;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.cta-btn:hover::after {
+  margin-left: 18px;
+}
+
+/* === How It Works === */
+.how-it-works {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fffefc;
+}
+
+.how-it-works h3 {
+  font-size: 1.8rem;
+  color:   #E30613;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.how-it-works h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #FFD700;
+  margin: 0.8rem auto 0;
+  border-radius: 4px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.step {
+  background: #FFD700;
+  color : #E30613;
+  padding: 1.2rem 1.8rem;
+  border-radius: 12px;
+  font-weight: bold;
+  min-width: 140px;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background:  #E30613;
+  color: #fff;
+}
+
+/* === Benefits Section === */
+.benefits {
+  background: #fffaf0;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.benefits h3 {
+  font-size: 2rem;
+  color:  #E30613;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.benefits h3::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #FFD700;
+  margin: 0.8rem auto 0;
+  border-radius: 4px;
+}
+
+.benefit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.benefit:hover {
+  transform: translateY(-8px);
+}
+
+.benefit i {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.benefit h4 {
+  margin-bottom: 0.8rem;
+  color: #E30613;
+  font-size: 1.2rem;
+}
+
+/* === Why HINT Section === */
+.why-hint {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #FFD70015, #FFB34715);
+}
+
+.why-hint h3 {
+  font-size: 2rem;
+  color : #E30613;
+  margin-bottom: 1.5rem;
+}
+
+.why-hint p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* === Impact Section === */
+.impact {
+  padding: 4rem 2rem;
+  background: #fffaf0;
+  text-align: center;
+}
+
+.impact h3 {
+  font-size: 2rem;
+  color:  #E30613;
+  margin-bottom: 2rem;
+}
+
+.impact ul {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.impact li {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  font-size: 1.05rem;
+  position: relative;
+  text-align: left;
+  padding-left: 2.2rem;
+}
+
+.impact li::before {
+  content: "✔";
+  color: #E30613;
+  font-weight: bold;
+  position: absolute;
+  left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+/* === Footer === */
+footer {
+  background: linear-gradient(to right, #FFD700, #FFB347); /* same as header */
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+  color: #E30613;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-top: 3px solid #E30613; /* adds a finishing line */
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.08);
+}
+
+footer a {
+  color: #E30613;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  font-size: 1.5rem;
+  margin: 0 0.7rem;
+  color:  #E30613;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #333;
+  transform: scale(1.2);
+}
+

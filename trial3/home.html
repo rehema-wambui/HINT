@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HINT — Digital Passport for Youth</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="home.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand" data-aos="fade-down">
+        <img src="logo.jpg" alt="HINT logo" class="site-logo">
+        <div class="brand-text">
+          <h1 data-i18n="brand">HINT</h1>
+          <span class="tagline" data-i18n="tagline">Digital Passport for Youth</span>
+        </div>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="language-switcher" data-aos="fade-down" data-aos-delay="100">
+        <select id="languageSelect">
+          <option value="en">English</option>
+          <option value="sw">Kiswahili</option>
+        </select>
+      </div>
+
+      <nav class="nav-actions" data-aos="fade-down" data-aos-delay="120">
+        <a href="signup.html" class="btn btn-primary" data-i18n="youthBtn">I'm a Youth</a>
+        <a href="employer-signup.html" class="btn btn-outline" data-i18n="employerBtn">I'm an Employer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-i18n="heroTitle">Empowering Kenyan youth with trusted, portable digital identity</h2>
+      <p class="lead" data-i18n="heroDesc">
+        HINT converts skills, gigs, and creativity into a verified Digital Passport — unlocking jobs, training and financial opportunity across Kenya.
+      </p>
+
+      <div class="hero-ctas" data-aos="zoom-in" data-aos-delay="200">
+        <a href="signup.html" class="btn btn-cta" data-i18n="ctaGetPassport">Get Your Digital Passport</a>
+        <a href="#how" class="btn btn-ghost" data-i18n="ctaHow">How it Works</a>
+      </div>
+
+      <div class="quick-stats" data-aos="fade-up" data-aos-delay="350">
+        <div class="stat">
+          <strong>60%+</strong>
+          <span data-i18n="statInformal">of youth in Kenya work informally</span>
+        </div>
+        <div class="stat">
+          <strong data-i18n="statVerified">Verified</strong>
+          <span data-i18n="statSkills">Skills & work histories</span>
+        </div>
+        <div class="stat">
+          <strong data-i18n="statOffline">Offline-ready</strong>
+          <span data-i18n="statPWA">PWA & USSD-ready roadmap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE HINT (cards) -->
+  <section class="why" id="why" data-aos="fade-up">
+    <div class="container">
+      <h3 class="section-title" data-i18n="whyTitle">Why Choose HINT?</h3>
+      <div class="why-grid">
+        <article class="card" data-aos="flip-left" data-aos-delay="100">
+          <i class="fas fa-shield-alt card-icon"></i>
+          <h4 data-i18n="whyTrust">Trusted Identity</h4>
+          <p data-i18n="whyTrustDesc">Verified credentials, endorsements and uploadable proof—designed to build trust fast.</p>
+        </article>
+
+        <article class="card" data-aos="flip-left" data-aos-delay="200">
+          <i class="fas fa-briefcase card-icon"></i>
+          <h4 data-i18n="whyEmployer">Employer-ready</h4>
+          <p data-i18n="whyEmployerDesc">Employers in Kenya can discover verified talent, request access, and leave endorsements.</p>
+        </article>
+
+        <article class="card" data-aos="flip-left" data-aos-delay="300">
+          <i class="fas fa-wallet card-icon"></i>
+          <h4 data-i18n="whyFinance">Financial Pathways</h4>
+          <p data-i18n="whyFinanceDesc">Optional SACCO & chama ties provide a pathway to microloans and savings products.</p>
+        </article>
+
+        <article class="card" data-aos="flip-left" data-aos-delay="400">
+          <i class="fas fa-globe card-icon"></i>
+          <h4 data-i18n="whyInclusive">Inclusive & Offline</h4>
+          <p data-i18n="whyInclusiveDesc">PWA-first design, USSD plans and Kiswahili support for wider access in Kenya.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+      <!-- HOW IT WORKS -->
+  <section class="how" id="how" data-aos="fade-up">
+    <div class="container">
+      <h3 class="section-title" data-i18n="howTitle">How It Works</h3>
+      <div class="how-steps">
+        <div class="step" data-aos="zoom-in" data-aos-delay="100">
+          <span class="step-number">1</span>
+          <h4 data-i18n="howStep1">Sign Up</h4>
+          <p data-i18n="howStep1Desc">Create your profile with education, work history, and skills.</p>
+        </div>
+        <div class="step" data-aos="zoom-in" data-aos-delay="200">
+          <span class="step-number">2</span>
+          <h4 data-i18n="howStep2">Verify</h4>
+          <p data-i18n="howStep2Desc">Upload certificates or get endorsements from past employers.</p>
+        </div>
+        <div class="step" data-aos="zoom-in" data-aos-delay="300">
+          <span class="step-number">3</span>
+          <h4 data-i18n="howStep3">Build Your Passport</h4>
+          <p data-i18n="howStep3Desc">Your skills, projects & side hustles are showcased in one place.</p>
+        </div>
+        <div class="step" data-aos="zoom-in" data-aos-delay="400">
+          <span class="step-number">4</span>
+          <h4 data-i18n="howStep4">Connect</h4>
+          <p data-i18n="howStep4Desc">Employers request access, view your passport, and hire with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES -->
+  <section class="success" data-aos="fade-up">
+    <div class="container">
+      <h3 class="section-title" data-i18n="successTitle">Success Stories</h3>
+      <div class="success-grid">
+        <article class="testimonial" data-aos="fade-right" data-aos-delay="100">
+          <p data-i18n="success1">"Through HINT I got my first IT freelance project. The verification built trust instantly!"</p>
+          <span>- Brian, Nairobi</span>
+        </article>
+        <article class="testimonial" data-aos="fade-right" data-aos-delay="200">
+          <p data-i18n="success2">"Employers trusted my SACCO savings records — I qualified for a small loan to expand my shop."</p>
+          <span>- Aisha, Mombasa</span>
+        </article>
+        <article class="testimonial" data-aos="fade-right" data-aos-delay="300">
+          <p data-i18n="success3">"Even without a degree, I showcased my welding projects and landed stable work."</p>
+          <span>- John, Kisumu</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+ <!-- FOOTER -->
+<footer data-aos="fade-up">
+  <div class="footer-inner container">
+    <div class="footer-left">
+      <img src="logo.jpg" alt="HINT logo" class="footer-logo">
+      <p data-i18n="footerBrand">HINT — Digital Passport for Youth</p>
+    </div>
+
+    <div class="footer-center">
+      <p>Email: <a href="mailto:info@hint.org">info@hint.org</a></p>
+      <p data-i18n="footerPhone">Phone: +254 712 345 678</p>
+    </div>
+
+    <div class="footer-right">
+      <div class="socials">
+        <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <small>© 2025 HINT — Empowering Kenyan Youth</small>
+  </div>
+
+  <!-- ✅ Updated buttons -->
+<a href="signup.html" onclick="setUserType('youth')">I’m a Youth</a>
+<a href="signup.html" onclick="setUserType('employer')">I’m an Employer</a>
+
+</footer>
+
+<!-- AOS + Language Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  function goToSignup(type) {
+    localStorage.setItem("pendingUserType", type);
+    window.location.href = "signup.html"; // force redirect
+  }
+
+  AOS.init({ duration: 900, once: true, easing: 'ease-out-cubic' });
+
+  const translations = {
+    en: {
+      brand: "HINT",
+      tagline: "Digital Passport for Youth",
+      youthBtn: "I'm a Youth",
+      employerBtn: "I'm an Employer",
+      heroTitle: "Empowering Kenyan youth with trusted, portable digital identity",
+      heroDesc: "HINT converts skills, gigs, and creativity into a verified Digital Passport — unlocking jobs, training and financial opportunity across Kenya.",
+      ctaGetPassport: "Get Your Digital Passport",
+      ctaHow: "How it Works",
+      statInformal: "of youth in Kenya work informally",
+      statVerified: "Verified",
+      statSkills: "Skills & work histories",
+      statOffline: "Offline-ready",
+      statPWA: "PWA & USSD-ready roadmap",
+      whyTitle: "Why Choose HINT?",
+      whyTrust: "Trusted Identity",
+      whyTrustDesc: "Verified credentials, endorsements and uploadable proof—designed to build trust fast.",
+      whyEmployer: "Employer-ready",
+      whyEmployerDesc: "Employers in Kenya can discover verified talent, request access, and leave endorsements.",
+      whyFinance: "Financial Pathways",
+      whyFinanceDesc: "Optional SACCO & chama ties provide a pathway to microloans and savings products.",
+      whyInclusive: "Inclusive & Offline",
+      whyInclusiveDesc: "PWA-first design, USSD plans and Kiswahili support for wider access in Kenya.",
+      footerBrand: "HINT — Digital Passport for Youth",
+      footerPhone: "Phone: +254 712 345 678"
+    },
+    sw: {
+      brand: "HINT",
+      tagline: "Pasipoti ya Kidijitali kwa Vijana",
+      youthBtn: "Mimi ni Kijana",
+      employerBtn: "Mimi ni Mwajiri",
+      heroTitle: "Kuwawezesha vijana wa Kenya kwa utambulisho wa kidijitali unaoaminika",
+      heroDesc: "HINT hubadilisha ujuzi, kazi ndogo ndogo, na ubunifu kuwa Pasipoti ya Kidijitali iliyothibitishwa — kufungua milango ya ajira, mafunzo na fursa za kifedha kote Kenya.",
+      ctaGetPassport: "Pata Pasipoti Yako ya Kidijitali",
+      ctaHow: "Jinsi Inavyofanya Kazi",
+      statInformal: "zaidi ya 60% ya vijana wa Kenya wanafanya kazi isiyo rasmi",
+      statVerified: "Imethibitishwa",
+      statSkills: "Ujuzi na historia ya kazi",
+      statOffline: "Inapatikana nje ya mtandao",
+      statPWA: "Muundo wa PWA & mipango ya USSD",
+      whyTitle: "Kwa Nini Uchague HINT?",
+      whyTrust: "Utambulisho Unaotegemewa",
+      whyTrustDesc: "Hati zilizothibitishwa, mapendekezo na vielelezo vya kupakia—vimeundwa kujenga uaminifu haraka.",
+      whyEmployer: "Tayari kwa Waajiri",
+      whyEmployerDesc: "Waajiri nchini Kenya wanaweza kugundua vipaji vilivyothibitishwa, kuomba ufikiaji, na kuacha mapendekezo.",
+      whyFinance: "Njia za Kifedha",
+      whyFinanceDesc: "Uhusiano wa hiari na SACCO & chama hutoa njia ya mikopo midogo na bidhaa za akiba.",
+      whyInclusive: "Jumuishi & Nje ya Mtandao",
+      whyInclusiveDesc: "Muundo wa kwanza wa PWA, mipango ya USSD na msaada wa Kiswahili kwa upatikanaji mpana nchini Kenya.",
+      footerBrand: "HINT — Pasipoti ya Kidijitali kwa Vijana",
+      footerPhone: "Simu: +254 712 345 678"
+    }
+  };
+
+  const langSelect = document.getElementById("languageSelect");
+  langSelect.addEventListener("change", (e) => {
+    const lang = e.target.value;
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+  });
+</script>
+</body>
+</html> 

@@ -1,0 +1,177 @@
+/* === General Page Styling === */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Passport Card Styling === */
+.passport-card {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* === Watermark === */
+.passport-card::before {
+  content: "HINT";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(227, 6, 19, 0.08); /* red tint watermark */
+  transform: translate(-50%, -50%) rotate(-20deg);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* === Profile Photo === */
+.passport-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FFD700;
+  margin-bottom: 1rem;
+}
+
+/* === Name & Location === */
+.passport-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+  color: #E30613;
+}
+
+.passport-card p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* === Tabs === */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  gap: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  background: #f1f1f1;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+  background: #FFD700;
+  color: #E30613;
+}
+
+.tabs button.active {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* === Content Box === */
+.content-box {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 80px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* === Share Section === */
+.share-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#qrCode canvas {
+  margin: 1rem auto;
+  display: block;
+  max-width: 200px;
+}
+
+#copyLink,
+#sharePassport {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#copyLink:hover,
+#sharePassport:hover {
+  background: #E30613;
+  color: #fff;
+}
+
+/* === Footer === */
+footer {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #E30613;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: #E30613;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+footer a {
+  color: #E30613;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

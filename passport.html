@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HINT – Digital Passport</title>
+  <link rel="stylesheet" href="passport.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="logo.jpg" alt="HINT Logo" class="logo">
+    <h1>HINT <span>Digital Passport</span></h1>
+  </header>
+
+  <!-- PASSPORT CARD -->
+  <section class="passport-card">
+    <div class="passport-header">
+      <img id="passportPhoto" class="passport-photo" src="" alt="Profile Photo">
+      <div class="passport-info">
+        <h2 id="passportName">Full Name</h2>
+        <p><strong>Location:</strong> <span id="passportLocation"></span></p>
+        <p><strong>Age:</strong> <span id="passportAge"></span></p>
+        <p><strong>Gender:</strong> <span id="passportGender"></span></p>
+        <span class="verified-badge">✔ Verified</span>
+      </div>
+      <canvas id="qrCode"></canvas>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button data-tab="education">Education</button>
+      <button data-tab="skills">Skills</button>
+      <button data-tab="work">Work & Recommendations</button>
+      <button data-tab="portfolio">Portfolio</button>
+      <button data-tab="finance">Financial Info</button>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div id="passportContent" class="tab-content">
+      <p>Select a tab to view details</p>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="passport-actions">
+      <button id="copyLink">Copy Passport Link</button>
+      <button id="sharePassport">Share Passport</button>
+      <button id="downloadPassport">Download as PDF</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 HINT – Empowering African Youth</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Email: <a href="mailto:info@hint.org">info@hint.org</a> | Phone: +254 712 345 678</p>
+    <a href="#">Contact Us</a>
+  </footer>
+
+  <script src="passport.js"></script>
+</body>
+</html>

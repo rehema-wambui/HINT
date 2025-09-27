@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HINT – Employer Sign Up</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="employer form.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="HINT Logo" class="logo"/>
+    <h1>HINT <span>Employer Portal</span></h1>
+  </header>
+
+  <section class="form-container">
+    <h2>Register Your Company</h2>
+    <form id="employerForm">
+      <!-- Company Info -->
+      <h3>Company Information</h3>
+      <label>Company Logo</label>
+      <input type="file" id="companyLogo" accept="image/*"/>
+
+      <label>Company Name</label>
+      <input type="text" id="companyName" required/>
+
+      <label>Registration Number</label>
+      <input type="text" id="registrationNumber" placeholder="Optional"/>
+
+      <label>Industry / Sector</label>
+      <input type="text" id="industry" required/>
+
+      <label>Company Size</label>
+      <select id="companySize">
+        <option>1–10 employees</option>
+        <option>11–50 employees</option>
+        <option>51–200 employees</option>
+        <option>200+ employees</option>
+      </select>
+
+      <label>Location</label>
+      <input type="text" id="location" required/>
+
+      <!-- Contact -->
+      <h3>Contact Person</h3>
+      <label>Full Name</label>
+      <input type="text" id="contactName" required/>
+
+      <label>Position</label>
+      <input type="text" id="contactPosition" required/>
+
+      <label>Email</label>
+      <input type="email" id="email" required/>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" required/>
+
+      <!-- Recruitment -->
+      <h3>Recruitment Preferences</h3>
+      <label>Roles You Hire For</label>
+      <input type="text" id="roles" placeholder="e.g. Welders, Software Developers"/>
+
+      <label>Skills You’re Interested In</label>
+      <input type="text" id="skills" placeholder="e.g. Carpentry, Coding, Design"/>
+
+      <label>Open to</label>
+      <select id="opportunities">
+        <option>Internships</option>
+        <option>Part-Time</option>
+        <option>Full-Time</option>
+        <option>All of the above</option>
+      </select>
+
+      <!-- Verification -->
+      <h3>Verification</h3>
+      <label>Upload Certificate / Permit</label>
+      <input type="file" id="certificate" accept="image/*,.pdf"/>
+
+      <label>Referee / Association Contact</label>
+      <input type="text" id="referee" placeholder="Optional"/>
+
+      <!-- Agreement -->
+      <label class="checkbox">
+        <input type="checkbox" required/> I agree to share my data securely for verification and recruitment.
+      </label>
+
+      <button type="submit" class="submit-btn">Register Employer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 HINT – Connecting Employers & Youth</p>
+  </footer>
+
+  <script src="employer form.js"></script>
+</body>
+</html>

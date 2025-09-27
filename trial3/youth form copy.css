@@ -1,0 +1,93 @@
+/* General theme (same as landing/auth) */
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("../assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #e9f5fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 10, 22, 0.75);
+  z-index: -1;
+}
+
+.form-container {
+  max-width: 700px;
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: fadeIn 0.9s ease;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  height: 70px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+.brand h1 {
+  font-size: 1.6rem;
+  color: #eaf9ff;
+}
+.brand .tagline {
+  font-size: 1rem;
+  color: #bfe9f6;
+}
+
+.section-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #8ef0ff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.3);
+  color: #e9f5fb;
+  font-size: 0.95rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00b4ff;
+  background: rgba(0,0,0,0.5);
+}
+
+.btn-cta {
+  background: linear-gradient(90deg,#00b4ff,#13d4ff);
+  border: none;
+  color: #002034;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.btn-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,200,255,0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

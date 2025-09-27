@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HINT – Youth Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="youth form.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="HINT Logo" class="logo"/>
+    <h1>HINT <span>Digital Passport</span></h1>
+  </header>
+    <main class="passport-container">
+    <h2>Your Digital Passport</h2>
+
+    <div id="passportContent">
+      <!-- Content will load here with JS -->
+    </div>
+  </main>
+
+  <section class="form-container">
+    <h2>Create Your Digital Passport</h2>
+    <form id="youthForm">
+      <!-- Profile -->
+      <label>Profile Photo</label>
+      <input type="file" id="photo" accept="image/*"/>
+
+      <label>Full Name</label>
+      <input type="text" id="fullName" required/>
+
+      <label>Age</label>
+      <input type="number" id="age" required/>
+
+      <label>Gender</label>
+      <select id="gender">
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+
+      <label>Location</label>
+      <input type="text" id="location" required/>
+
+      <label>Email</label>
+      <input type="email" id="email"/>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone"/>
+
+      <!-- Education -->
+      <h3>Education</h3>
+      <input type="text" id="education" placeholder="e.g. Diploma in IT at XYZ College"/>
+
+      <!-- Work -->
+      <h3>Work History</h3>
+      <input type="text" id="workHistory" placeholder="e.g. Internship at ABC Company"/>
+
+      <!-- Portfolio -->
+      <h3>Portfolio & Side Projects</h3>
+      <input type="text" id="portfolio" placeholder="e.g. Built a mobile app for..." />
+
+      <!-- Finance -->
+      <h3>Financial Info (Optional)</h3>
+      <label>Mobile Money Number</label>
+      <input type="text" id="finance" placeholder="e.g. M-Pesa / Airtel Money"/>
+
+      <label>Savings/Chama Group</label>
+      <input type="text" id="savings" placeholder="Optional"/>
+
+      <!-- Verification -->
+      <h3>Verification</h3>
+      <label>Upload ID/Passport/Student ID</label>
+      <input type="file" id="idUpload" accept="image/*,.pdf"/>
+
+      <label>Referee Contact</label>
+      <input type="text" id="referee" placeholder="Name & Phone/email"/>
+
+      <!-- Agreement -->
+      <label class="checkbox">
+        <input type="checkbox" required/> I agree to share my data securely for verification and opportunities.
+      </label>
+
+      <button type="submit" class="submit-btn">Create Passport</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 HINT – Empowering African Youth</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Email: <a href="mailto:info@hint.org">info@hint.org</a> | Phone: +254 712 345 678</p>
+    <a href="#">Contact Us</a>
+  </footer>
+
+  <script src="youth form.js"></script>
+</body>
+</html>

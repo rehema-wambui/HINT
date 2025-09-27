@@ -1,0 +1,105 @@
+/* === Base Styles === */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #E30613;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-wrap: wrap; /* makes it wrap on small screens */
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header h1 span {
+  color: #333;
+  font-weight: 600;
+}
+
+/* === Logo Styling === */
+.logo {
+  height: 70px;          /* Enlarged logo */
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;    /* Slightly rounded corners */
+  box-shadow:  4px 12px rgba(0,0,0,0.1); /* Subtle shadow */
+  background: #0e0e0e;      /* White background for contrast */
+  padding: 5px;          /* Padding around the logo */
+  transition: transform 0.3s ease;
+
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 70px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 55px;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* === Footer === */
+footer {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #E30613;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: #E30613;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+footer a {
+  color: #E30613;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

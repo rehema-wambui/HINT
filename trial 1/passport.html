@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Digital Passport</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="passport.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="HINT.jpg" alt="HINT Logo" class="logo">
+    <h1>HINT <span>Digital Passport</span></h1>
+  </header>
+
+  <!-- Passport Card -->
+  <section class="passport-card">
+    <img id="passportPhoto" alt="Profile Photo">
+    <h2 id="passportName"></h2>
+    <p id="passportLocation"></p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+  <button data-tab="skills">Skills</button>
+  <button data-tab="education">Education</button>
+  <button data-tab="work">Work</button>
+  <button data-tab="creative">Creative</button>
+    </div>
+
+
+    <!-- Tab Content -->
+    <div id="passportContent" class="content-box"></div>
+  </section>
+
+  <!-- Share Section -->
+
+  <section class="share-section">
+  <button id="sharePassport">Share Your Passport</button>
+  <canvas id="qrCode"></canvas>
+  <button id="copyLink">Copy Passport Link</button>
+</section>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 HINT – Empowering African Youth</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Email: <a href="mailto:info@hint.org">info@hint.org</a> | Phone: +254 712 345 678</p>
+    <a href="#">Contact Us</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="passport.js"></script>
+</body>
+</html>
